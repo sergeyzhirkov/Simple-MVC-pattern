@@ -25,5 +25,10 @@ public class MainModel implements Model {
 
     }
 
+    @Override
+    public void loadUserById(long userId) {
+        modelData.setActiveUser(userService.getUsersById(userId));
+    }
+
 
 }
